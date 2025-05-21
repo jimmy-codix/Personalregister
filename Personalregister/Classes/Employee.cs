@@ -10,9 +10,9 @@ namespace Personalregister.Classes
     {
         private string surname;
         private string lastname;
-        //TODO maybe change to floating point.
-        private int sallary;
-        public Employee(string surname, string lastname, int sallary) 
+        //TODO maybe change to floating point. Not needed right now because no caluculation is done.
+        private string sallary;
+        public Employee(string surname, string lastname, string sallary) 
         {
             this.surname = surname;
             this.lastname = lastname;
@@ -29,9 +29,14 @@ namespace Personalregister.Classes
             return lastname;
         }
 
-        public int GetSallary()
+        public string GetSallary()
         {
             return sallary;
+        }
+
+        public string PrintEmployee()
+        {
+            return $"{surname} {lastname} {sallary}";
         }
 
     }
