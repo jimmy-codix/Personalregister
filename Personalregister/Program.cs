@@ -1,10 +1,14 @@
-﻿namespace Personalregister
+﻿using Personalregister.Classes;
+using System.Runtime.CompilerServices;
+
+namespace Personalregister
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Logic logic = new Logic();
+            logic.ShowMenu();
         }
     }
 }
