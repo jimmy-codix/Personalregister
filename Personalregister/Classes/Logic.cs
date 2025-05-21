@@ -28,10 +28,10 @@ namespace Personalregister.Classes
             switch (value)
             {
                 case "1":
-                    AddEmployee(this.employees);
+                    AddEmployee();
                     break;
                 case "2":
-                    PrintEmployees(this.employees);
+                    PrintEmployees();
                     break;
                 default:
                     ShowMenu(true);
@@ -39,7 +39,7 @@ namespace Personalregister.Classes
             }
         }
 
-        private void AddEmployee(List<Employee> employees)
+        private void AddEmployee()
         {
             while (true)
             {
@@ -66,7 +66,7 @@ namespace Personalregister.Classes
             }
         }
 
-        private void PrintEmployees(List<Employee> employees)
+        private void PrintEmployees()
         {
             CW("Anställda:");
             CW();
